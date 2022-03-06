@@ -1,0 +1,25 @@
+{
+  "name": "polytoria-code-snippets",
+  "displayName": "Polytoria Code Snippets",
+  "description": "Code snippet to create Polytoria game faster.",
+  "version": "0.0.3",
+  "engines": {
+    "vscode": "^1.32.0"
+   },
+   "publisher": "devpixels",
+   "icon": "icon.png",
+  "categories": [
+    "Snippets"
+  ],
+  "repository": {
+    "url" : "https://github.com/SK-Fast/Polytoria-CodeSnippets/issues"
+  },
+  "contributes": {
+    "snippets": [
+        {
+          "language": "lua",
+          "path": "./polytoria.code-snippets"
+        }
+    ]
+   }
+}
