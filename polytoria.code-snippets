@@ -271,21 +271,21 @@
 	},
 
 	// Enums
-	"AnchorPreset.TopMiddle": {
+	"AnchorPreset.TopCenter": {
 		"scope": "lua",
-		"prefix": ["AnchorPreset.TopMiddle"],
+		"prefix": ["AnchorPreset.TopCenter"],
 		"body": [
-			"AnchorPreset.TopMiddle"
+			"AnchorPreset.TopCenter"
 		],
-		"description": "AnchorPreset TopMiddle"
+		"description": "AnchorPreset TopCenter"
 	},
-	"AnchorPreset.BottomMiddle": {
+	"AnchorPreset.BottomCenter": {
 		"scope": "lua",
-		"prefix": ["AnchorPreset.BottomMiddle"],
+		"prefix": ["AnchorPreset.BottomCenter"],
 		"body": [
-			"AnchorPreset.BottomMiddle"
+			"AnchorPreset.BottomCenter"
 		],
-		"description": "AnchorPreset BottomMiddle"
+		"description": "AnchorPreset BottomCenter"
 	},
 	"AnchorPreset.Left": {
 		"scope": "lua",
