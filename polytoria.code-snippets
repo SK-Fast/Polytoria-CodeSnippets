@@ -11,6 +11,12 @@
 		"body": ["game['Environment']"],
 		"description": "Get Environment."
 	},
+    "Players": {
+		"scope": "lua",
+		"prefix": ["Players"],
+		"body": ["game['Players']"],
+		"description": "Get Players Service."
+	},
 	"Hidden": {
 		"scope": "lua",
 		"prefix": ["Hidden"],
@@ -39,17 +45,27 @@
 		"scope": "lua",
 		"prefix": ["Touched"],
 		"body": [
-			"${1:object}.Touched:Connect(${2:function(hit)",
+			"${1}.Touched:Connect(${2:function(hit)",
 			"\t",
 			"end})"
 		],
 		"description": "On Instance Touched."
 	},
+    "Rendered": {
+		"scope": "lua",
+		"prefix": ["Rendered"],
+		"body": [
+			"game.Rendered:Connect(${2:function(deltaTime)",
+			"\t",
+			"end})"
+		],
+		"description": "On Game rendered."
+	},
 	"Clicked": {
 		"scope": "lua",
 		"prefix": ["Clicked"],
 		"body": [
-			"${1:object}.Clicked:Connect(${2:function(plr)",
+			"${1}.Clicked:Connect(${2:function(plr)",
 			"\t",
 			"end})"
 		],
@@ -108,6 +124,22 @@
 			":Destroy()"
 		],
 		"description": "Destroy object."
+	},
+    ".LookAt": {
+		"scope": "lua",
+		"prefix": [".LookAt"],
+		"body": [
+			".LookAt($1)"
+		],
+		"description": "Rotates the DynamicInstance so that the forward vector looks at the target."
+	},
+    ".Translate": {
+		"scope": "lua",
+		"prefix": [".Translate"],
+		"body": [
+			".Translate($1)"
+		],
+		"description": "Moves the transform in the direction and distance of translation."
 	},
 	":FindChild": {
 		"scope": "lua",
@@ -205,11 +237,83 @@
 		],
 		"description": "Specifies the parent instance of an instance."
 	},
+    ".Forward": {
+		"scope": "lua",
+		"prefix": [".Forward"],
+		"body": [
+			".Forward"
+		],
+		"description": "The forward vector of this DynamicInstance"
+	},
+    ".Up": {
+		"scope": "lua",
+		"prefix": [".Up"],
+		"body": [
+			".Up"
+		],
+		"description": "The up vector of this DynamicInstance"
+	},
+    ".Right": {
+		"scope": "lua",
+		"prefix": [".Right"],
+		"body": [
+			".Right"
+		],
+		"description": "The right vector of this DynamicInstance"
+	},
+    ".LocalPosition": {
+		"scope": "lua",
+		"prefix": [".LocalPosition"],
+		"body": [
+			".LocalPosition"
+		],
+		"description": "Specifies the position relative to the parent of an instance."
+	},
+    ".LocalRotation": {
+		"scope": "lua",
+		"prefix": [".LocalRotation"],
+		"body": [
+			".LocalRotation"
+		],
+		"description": "Specifies the rotation relative to the parent of an instance."
+	},
+    ".LocalSize": {
+		"scope": "lua",
+		"prefix": [".LocalSize"],
+		"body": [
+			".LocalSize"
+		],
+		"description": "Specifies the size relative to the parent of an instance."
+	},
+    ".Position": {
+		"scope": "lua",
+		"prefix": [".Position"],
+		"body": [
+			".Position"
+		],
+		"description": "Specifies the position of an instance."
+	},
+    ".Rotation": {
+		"scope": "lua",
+		"prefix": [".Rotation"],
+		"body": [
+			".Rotation"
+		],
+		"description": "Specifies the rotation of an instance."
+	},
+    ".Size": {
+		"scope": "lua",
+		"prefix": [".Size"],
+		"body": [
+			".Size"
+		],
+		"description": "Specifies the size of an instance."
+	},
 	".Shared": {
 		"scope": "lua",
 		"prefix": [".Shared"],
 		"body": [
-			".Shared"
+			"${1}.Shared"
 		],
 		"description": "An empty table you can use to hold metadata about anything on any object or player you want. Does not sync client <-> server."
 	},
@@ -217,7 +321,7 @@
 		"scope": "lua",
 		"prefix": [".Gravity"],
 		"body": [
-			".Gravity"
+			"game['Environment'].Gravity"
 		],
 		"description": "Determines the constant force to apply to all physics-based objects in the world."
 	},
@@ -225,9 +329,41 @@
 		"scope": "lua",
 		"prefix": [".Skybox"],
 		"body": [
-			".Skybox"
+			"game['Environment'].Skybox"
 		],
 		"description": "Specifies which skybox to use in the game."
+	},
+    ".GameID": {
+		"scope": "lua",
+		"prefix": [".GameID"],
+		"body": [
+			"game.GameID"
+		],
+		"description": "The ID of the current game. Return 0 if local test."
+	},
+    ".InstanceCount": {
+		"scope": "lua",
+		"prefix": ["game.InstanceCount"],
+		"body": [
+			".InstanceCount"
+		],
+		"description": "The amount of instances currently loaded on the server."
+	},
+    ".LocalInstanceCount": {
+		"scope": "lua",
+		"prefix": [".LocalInstanceCount"],
+		"body": [
+			"game.LocalInstanceCount"
+		],
+		"description": "The amount of instances currently loaded on the client."
+	},
+    ".PlayersConnected": {
+		"scope": "lua",
+		"prefix": [".PlayersConnected"],
+		"body": [
+			"game.PlayersConnected"
+		],
+		"description": "The amount of players on the server."
 	},
 	"Vector3.New": {
 		"scope": "lua",
@@ -278,6 +414,14 @@
 			"AnchorPreset.TopCenter"
 		],
 		"description": "AnchorPreset TopCenter"
+	},
+    "AnchorPreset.Center": {
+		"scope": "lua",
+		"prefix": ["AnchorPreset.Center"],
+		"body": [
+			"AnchorPreset.Center"
+		],
+		"description": "AnchorPreset Center"
 	},
 	"AnchorPreset.BottomCenter": {
 		"scope": "lua",
@@ -853,6 +997,46 @@
 		],
 		"description": "Returns a json string with the contents of the specified table.",
 	},
+    "Tween:Cancel": {
+		"scope": "lua",
+		"prefix": ["CancelTween","Tween:Cancel"],
+		"body": [
+			"Tween:Cancel(${1:'id'})"
+		],
+		"description": "Cancel tween with specified ID.",
+	},
+    "Tween:CancelAll": {
+		"scope": "lua",
+		"prefix": ["CancelAllTweens","Tween:CancelAll"],
+		"body": [
+			"Tween:CancelAll()"
+		],
+		"description": "Cancel all running tweens.",
+	},
+    "Tween:Pause": {
+		"scope": "lua",
+		"prefix": ["PauseTween","Tween:Pause"],
+		"body": [
+			"Tween:Pause(${1:'id'})"
+		],
+		"description": "Pause tween with specified ID.",
+	},
+    "Tween:Resume": {
+		"scope": "lua",
+		"prefix": ["ResumeTween","Tween:Resume"],
+		"body": [
+			"Tween:Resume(${1:'id'})"
+		],
+		"description": "Resume tween with specified ID.",
+	},
+    "Tween:IsPaused": {
+		"scope": "lua",
+		"prefix": ["IsTweenPaused","Tween:IsPaused"],
+		"body": [
+			"Tween:IsPaused(${1:'id'})"
+		],
+		"description": "Check if tween with specified ID is paused.",
+	},
 	"Tween:TweenColor": {
 		"scope": "lua",
 		"prefix": ["TweenColor","Tween:TweenColor"],
@@ -1351,11 +1535,317 @@
 		"description": "VerticalAlignment Bottom"
 	},
 	"os.time": {
-        	"scope": "lua",
-        	"prefix": ["os.time"],
-        	"body": [
-            		"os.time"
-        	],
-        	"description": "Returns the current time in unix timestamp."
-    	},
+        "scope": "lua",
+        "prefix": ["os.time"],
+        "body": [
+        	"os.time"
+        ],
+        "description": "Returns the current time in unix timestamp."
+    },
+	"NetMessage.New": {
+        "scope": "lua",
+        "prefix": ["NetMessage.New"],
+        "body": [
+        	"NetMessage.New()"
+        ],
+        "description": "Creates a new NetMessage."
+    },
+	"NetMessage.AddString": {
+        "scope": "lua",
+        "prefix": ["NetMessage.AddString"],
+        "body": [
+        	".AddString(${1:'key'}, ${2:'value'})"
+        ],
+        "description": "Sets a string value."
+    },
+    "NetMessage.AddInt": {
+        "scope": "lua",
+        "prefix": ["NetMessage.AddInt"],
+        "body": [
+        	".AddInt(${1:'key'}, ${2:0})"
+        ],
+        "description": "Sets a int value."
+    },
+    "NetMessage.AddNumber": {
+        "scope": "lua",
+        "prefix": ["NetMessage.AddNumber"],
+        "body": [
+        	".AddNumber(${1:'key'}, ${2:0})"
+        ],
+        "description": "Sets a number value."
+    },
+    "NetMessage.AddBool": {
+        "scope": "lua",
+        "prefix": ["NetMessage.AddBool"],
+        "body": [
+        	".AddNumber(${1:'key'}, ${2:true})"
+        ],
+        "description": "Sets a bool value."
+    },
+    "NetMessage.AddVector2": {
+        "scope": "lua",
+        "prefix": ["NetMessage.AddVector2"],
+        "body": [
+        	".AddVector2(${1:'key'}, ${2:Vector2.New(0,0)})"
+        ],
+        "description": "Sets a vector2 value."
+    },
+    "NetMessage.AddVector3": {
+        "scope": "lua",
+        "prefix": ["NetMessage.AddVector3"],
+        "body": [
+        	".AddVector3(${1:'key'}, ${2:Vector3.New(0,0,0)})"
+        ],
+        "description": "Sets a vector3 value."
+    },
+    "NetMessage.AddColor": {
+        "scope": "lua",
+        "prefix": ["NetMessage.AddColor"],
+        "body": [
+        	".AddColor(${1:'key'}, ${2:Color.New(0,0,0,0)})"
+        ],
+        "description": "Sets a color value."
+    },
+    "NetMessage.AddInstance": {
+        "scope": "lua",
+        "prefix": ["NetMessage.AddInstance"],
+        "body": [
+        	".AddInstance(${1:'key'}, ${2:nil})"
+        ],
+        "description": "Sets a instance value."
+    },
+	"NetMessage.GetString": {
+        "scope": "lua",
+        "prefix": ["NetMessage.GetString"],
+        "body": [
+        	".GetString(${1:'key'})"
+        ],
+        "description": "Gets a string value."
+    },
+    "NetMessage.GetInt": {
+        "scope": "lua",
+        "prefix": ["NetMessage.GetInt"],
+        "body": [
+        	".GetInt(${1:'key'})"
+        ],
+        "description": "Gets a int value."
+    },
+    "NetMessage.GetNumber": {
+        "scope": "lua",
+        "prefix": ["NetMessage.GetNumber"],
+        "body": [
+        	".GetNumber(${1:'key'})"
+        ],
+        "description": "Gets a number value."
+    },
+    "NetMessage.GetBool": {
+        "scope": "lua",
+        "prefix": ["NetMessage.GetBool"],
+        "body": [
+        	".GetBool(${1:'key'})"
+        ],
+        "description": "Gets a bool value."
+    },
+    "NetMessage.GetVector2": {
+        "scope": "lua",
+        "prefix": ["NetMessage.GetVector2"],
+        "body": [
+        	".GetVector2(${1:'key'})"
+        ],
+        "description": "Gets a Vector2 value."
+    },
+    "NetMessage.GetVector3": {
+        "scope": "lua",
+        "prefix": ["NetMessage.GetVector3"],
+        "body": [
+        	".GetVector3(${1:'key'})"
+        ],
+        "description": "Gets a Vector3 value."
+    },
+    "NetMessage.GetColor": {
+        "scope": "lua",
+        "prefix": ["NetMessage.GetColor"],
+        "body": [
+        	".GetColor(${1:'key'})"
+        ],
+        "description": "Gets a Color value."
+    },
+    "NetMessage.GetInstance": {
+        "scope": "lua",
+        "prefix": ["NetMessage.GetInstance"],
+        "body": [
+        	".GetInstance(${1:'key'})"
+        ],
+        "description": "Gets a Instance value."
+    },
+    // Camera
+    "Camera.Distance": {
+        "scope": "lua",
+        "prefix": ["Camera.Distance"],
+        "body": [
+        	"Camera.Distance"
+        ],
+        "description": "The distance from the player when in FollowPlayer mode."
+    },
+    "Camera.FOV": {
+        "scope": "lua",
+        "prefix": ["Camera.FOV"],
+        "body": [
+        	"Camera.FOV"
+        ],
+        "description": "Gets/sets the field of view."
+    },
+    "Camera.FastFlySpeed": {
+        "scope": "lua",
+        "prefix": ["Camera.FastFlySpeed"],
+        "body": [
+        	"Camera.FastFlySpeed"
+        ],
+        "description": "The speed the camera moves at in Free mode while holding down shift."
+    },
+    "Camera.FlySpeed": {
+        "scope": "lua",
+        "prefix": ["Camera.FlySpeed"],
+        "body": [
+        	"Camera.FlySpeed"
+        ],
+        "description": "The speed the camera moves at in Free mode."
+    },
+    "Camera.FollowLerp": {
+        "scope": "lua",
+        "prefix": ["Camera.FollowLerp"],
+        "body": [
+        	"Camera.FollowLerp"
+        ],
+        "description": "Whether to use lerping in FollowPlayer mode."
+    },
+    "Camera.FreeLookSensitivity": {
+        "scope": "lua",
+        "prefix": ["Camera.FreeLookSensitivity"],
+        "body": [
+        	"Camera.FreeLookSensitivity"
+        ],
+        "description": "The mouse sensitivity while in Free mode."
+    },
+    "Camera.HorizontalSpeed": {
+        "scope": "lua",
+        "prefix": ["Camera.HorizontalSpeed"],
+        "body": [
+        	"Camera.HorizontalSpeed"
+        ],
+        "description": "The horizontal move speed of the camera in FollowPlayer mode."
+    },
+    "Camera.Position": {
+        "scope": "lua",
+        "prefix": ["Camera.Position"],
+        "body": [
+        	"Camera.Position"
+        ],
+        "description": "The current camera position."
+    },
+    "Camera.Rotation": {
+        "scope": "lua",
+        "prefix": ["Camera.Rotation"],
+        "body": [
+        	"Camera.Rotation"
+        ],
+        "description": "The current camera rotation."
+    },
+    "Camera.IsFirstPerson": {
+        "scope": "lua",
+        "prefix": ["Camera.IsFirstPerson"],
+        "body": [
+        	"Camera.IsFirstPerson"
+        ],
+        "description": "Returns whether the camera is currently in first person mode."
+    },
+    "Camera.LerpSpeed": {
+        "scope": "lua",
+        "prefix": ["Camera.LerpSpeed"],
+        "body": [
+        	"Camera.LerpSpeed"
+        ],
+        "description": "The lerp speed of the camera if lerping is enabled."
+    },
+    "Camera.MaxDistance": {
+        "scope": "lua",
+        "prefix": ["Camera.MaxDistance"],
+        "body": [
+        	"Camera.MaxDistance"
+        ],
+        "description": "The maximum distance the camera can be from the player in FollowPlayer mode."
+    },
+    "Camera.MinDistance": {
+        "scope": "lua",
+        "prefix": ["Camera.MinDistance"],
+        "body": [
+        	"Camera.MinDistance"
+        ],
+        "description": "The minimum distance the camera can be from the player in FollowPlayer mode."
+    },
+    "Camera.Mode": {
+        "scope": "lua",
+        "prefix": ["Camera.Mode"],
+        "body": [
+        	"Camera.Mode"
+        ],
+        "description": "Gets/sets the current camera mode."
+    },
+    "Camera.Orthographic": {
+        "scope": "lua",
+        "prefix": ["Camera.Orthographic"],
+        "body": [
+        	"Camera.Orthographic"
+        ],
+        "description": "Returns whether the camera should render in orthographic (2D) mode or not (3D)."
+    },
+    "Camera.OrthographicSize": {
+        "scope": "lua",
+        "prefix": ["Camera.OrthographicSize"],
+        "body": [
+        	"Camera.OrthographicSize"
+        ],
+        "description": "The camera's half-size when in orthographic mode."
+    },
+    "Camera.ScrollSensitivity": {
+        "scope": "lua",
+        "prefix": ["Camera.ScrollSensitivity"],
+        "body": [
+        	"Camera.ScrollSensitivity"
+        ],
+        "description": "The scroll move speed of the camera."
+    },
+    "Camera.VerticalSpeed": {
+        "scope": "lua",
+        "prefix": ["Camera.VerticalSpeed"],
+        "body": [
+        	"Camera.VerticalSpeed"
+        ],
+        "description": "The vertical move speed of the camera in FollowPlayer mode."
+    },
+    // CameraMode
+    "CameraMode.Scripted": {
+        "scope": "lua",
+        "prefix": ["CameraMode.Scripted"],
+        "body": [
+        	"CameraMode.Scripted"
+        ],
+        "description": "CameraMode Scripted"
+    },
+    "CameraMode.FollowPlayer": {
+        "scope": "lua",
+        "prefix": ["CameraMode.FollowPlayer"],
+        "body": [
+        	"CameraMode.FollowPlayer"
+        ],
+        "description": "CameraMode FollowPlayer"
+    },
+    "CameraMode.Free": {
+        "scope": "lua",
+        "prefix": ["CameraMode.Free"],
+        "body": [
+        	"CameraMode.Free"
+        ],
+        "description": "CameraMode Free"
+    },
 }
