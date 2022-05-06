@@ -1350,4 +1350,12 @@
 		],
 		"description": "VerticalAlignment Bottom"
 	},
+	"os.time": {
+        	"scope": "lua",
+        	"prefix": ["os.time"],
+        	"body": [
+            		"os.time"
+        	],
+        	"description": "Returns the current time in unix timestamp."
+    	},
 }
