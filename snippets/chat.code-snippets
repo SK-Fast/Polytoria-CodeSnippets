@@ -1,0 +1,18 @@
+{
+    "Chat:BroadcastMessage": {
+		"scope": "lua",
+		"prefix": ["Chat:BroadcastMessage"],
+		"body": [
+			"Chat:BroadcastMessage('${1:Hello World!}')"
+		],
+		"description": "Send message to the chat."
+	},
+	"Chat:UnicastMessage": {
+		"scope": "lua",
+		"prefix": ["Chat:UnicastMessage"],
+		"body": [
+			"Chat:UnicastMessage('${1:Hello World!}',${2:Player})"
+		],
+		"description": "Sends a chat message to a specific user."
+	},
+}

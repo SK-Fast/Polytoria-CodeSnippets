@@ -1,0 +1,26 @@
+{
+    "CameraMode.Scripted": {
+        "scope": "lua",
+        "prefix": ["CameraMode.Scripted"],
+        "body": [
+        	"CameraMode.Scripted"
+        ],
+        "description": "CameraMode Scripted"
+    },
+    "CameraMode.FollowPlayer": {
+        "scope": "lua",
+        "prefix": ["CameraMode.FollowPlayer"],
+        "body": [
+        	"CameraMode.FollowPlayer"
+        ],
+        "description": "CameraMode FollowPlayer"
+    },
+    "CameraMode.Free": {
+        "scope": "lua",
+        "prefix": ["CameraMode.Free"],
+        "body": [
+        	"CameraMode.Free"
+        ],
+        "description": "CameraMode Free"
+    },
+}

@@ -1,0 +1,34 @@
+{
+	"Color.New": {
+		"scope": "lua",
+		"prefix": ["Color.New", "c"],
+		"body": [
+			"Color.New(${1:1},${2:1},${3:1},${4:1})"
+		],
+		"description": "Creates a new Color with the set R, G, B and A values"
+	},
+    "Color.FromHex": {
+		"scope": "lua",
+		"prefix": ["Color.FromHex"],
+		"body": [
+			"Color.FromHex('${1:#FFF}')"
+		],
+		"description": "Creates a new Color from the specified hex value."
+	},
+    "Color.Random": {
+		"scope": "lua",
+		"prefix": ["Color.Random"],
+		"body": [
+			"Color.Random()"
+		],
+		"description": "Returns a random color with an alpha value of 1."
+	},
+    "Color.Lerp": {
+		"scope": "lua",
+		"prefix": ["Color.Lerp"],
+		"body": [
+			"Color.Lerp(${1:a},${2:b},${3:t})"
+		],
+		"description": "Linearly interpolates colors a and b by t."
+	},
+}

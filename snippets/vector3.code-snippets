@@ -1,0 +1,162 @@
+{
+    "Vector3.New": {
+		"scope": "lua",
+		"prefix": ["Vector3.New", "v3"],
+		"body": [
+			"Vector3.New(${1:0}, ${2:0}, ${3:0})"
+		],
+		"description": "Creates a new Vector3 with the specified values."
+	},
+	"Vector3.Angle": {
+		"scope": "lua",
+		"prefix": ["Vector3.Angle"],
+		"body": [
+			"Vector3.Angle(${1:from}, ${2:to})"
+		],
+		"description": "Returns the angle in degrees between from and to."
+	},
+	"Vector3.ClampMagnitude": {
+		"scope": "lua",
+		"prefix": ["Vector3.ClampMagnitude"],
+		"body": [
+			"Vector3.ClampMagnitude(${1:vector}, ${2:maxLength})"
+		],
+		"description": "Returns a copy of this vector with its magnitude clamped to maxLength"
+	},
+	"Vector3.Cross": {
+		"scope": "lua",
+		"prefix": ["Vector3.Cross"],
+		"body": [
+			"Vector3.Cross(${1:a}, ${2:b})"
+		],
+		"description": "Cross product of two vectors."
+	},
+	"Vector3.Distance": {
+		"scope": "lua",
+		"prefix": ["Vector3.Distance"],
+		"body": [
+			"Vector3.Distance(${1:a}, ${2:b})"
+		],
+		"description": "Returns the distance between a and b"
+	},
+	"Vector3.Dot": {
+		"scope": "lua",
+		"prefix": ["Vector3.Dot"],
+		"body": [
+			"Vector3.Dot(${1:a}, ${2:b})"
+		],
+		"description": "Dot product of two vectors"
+	},
+	"Vector3.Max": {
+		"scope": "lua",
+		"prefix": ["Vector3.Max"],
+		"body": [
+			"Vector3.Max(${1:a}, ${2:b})"
+		],
+		"description": "Returns a vector that is made from the largest components of two vectors."
+	},
+	"Vector3.Min": {
+		"scope": "lua",
+		"prefix": ["Vector3.Min"],
+		"body": [
+			"Vector3.Min(${1:a}, ${2:b})"
+		],
+		"description": "Returns a vector that is made from the smallest components of two vectors."
+	},
+	"Vector3.Project": {
+		"scope": "lua",
+		"prefix": ["Vector3.Project"],
+		"body": [
+			"Vector3.Project(${1:vector}, ${2:onNormal})"
+		],
+		"description": "Projects a vector onto another vector."
+	},
+	"Vector3.ProjectOnPlane": {
+		"scope": "lua",
+		"prefix": ["Vector3.ProjectOnPlane"],
+		"body": [
+			"Vector3.ProjectOnPlane(${1:vector}, ${2:planeNormal})"
+		],
+		"description": "Projects a vector onto a plane defined by a normal orthogonal to the plane."
+	},
+	"Vector3.Reflect": {
+		"scope": "lua",
+		"prefix": ["Vector3.Reflect"],
+		"body": [
+			"Vector3.Reflect(${1:inDirection}, ${2:inNormal})"
+		],
+		"description": "Reflects a vector off the plane defined by a normal."
+	},
+	"Vector3.Scale": {
+		"scope": "lua",
+		"prefix": ["Vector3.Scale"],
+		"body": [
+			"Vector3.Scale(${1:a}, ${2:b})"
+		],
+		"description": "Multiplies two vectors component-wise."
+	},
+	"Vector3.Slerp": {
+		"scope": "lua",
+		"prefix": ["Vector3.Slerp"],
+		"body": [
+			"Vector3.Slerp(${1:a}, ${2:b})"
+		],
+		"description": "Spherically interpolates between two vectors."
+	},
+	"Vector3.SlerpUnclamped": {
+		"scope": "lua",
+		"prefix": ["Vector3.SlerpUnclamped"],
+		"body": [
+			"Vector3.SlerpUnclamped(${1:a}, ${2:b})"
+		],
+		"description": "Spherically interpolates between two vectors."
+	},
+	"Vector3.Lerp": {
+		"scope": "lua",
+		"prefix": ["Vector3.Lerp"],
+		"body": [
+			"Vector3.Lerp(${1:a}, ${2:b}, ${3:t})"
+		],
+		"description": "Linearly interpolates between two points."
+	},
+	"Vector3.SignedAngle": {
+		"scope": "lua",
+		"prefix": ["Vector3.SignedAngle"],
+		"body": [
+			"Vector3.SignedAngle(${1:from}, ${2:to}, ${3:axis})"
+		],
+		"description": "Returns the signed angle in degrees between from and to."
+	},
+	"Vector3.MoveTowards": {
+		"scope": "lua",
+		"prefix": ["Vector3.MoveTowards"],
+		"body": [
+			"Vector3.MoveTowards(${1:current}, ${2:target}, ${3:maxDistanceDelta})"
+		],
+		"description": "Calculate a position between the points specified by current and target, moving no farther than the distance specified by maxDistanceDelta."
+	},
+	"Vector3.RotateTowards": {
+		"scope": "lua",
+		"prefix": ["Vector3.RotateTowards"],
+		"body": [
+			"Vector3.RotateTowards(${1:current}, ${2:target}, ${3:maxRadiansDelta}, ${4:maxMagnitudeDelta})"
+		],
+		"description": "Rotates a vector current towards target."
+	},
+	"Vector3.SmoothDamp": {
+		"scope": "lua",
+		"prefix": ["Vector3.SmoothDamp"],
+		"body": [
+			"Vector3.SmoothDamp(${1:current}, ${2:target}, ${3:currentVelocity}, ${4:smoothTime}, ${5:maxSpeed}, ${6:deltaTime})"
+		],
+		"description": "Gradually changes a vector towards a desired goal over time."
+	},
+	"Vector3.Normalize": {
+		"scope": "lua",
+		"prefix": ["Vector3.Normalize"],
+		"body": [
+			"Vector3.Normalize(${1:value})"
+		],
+		"description": "Makes this vector have a magnitude of 1."
+	},
+}

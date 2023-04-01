@@ -1,0 +1,82 @@
+{
+    "TextFontPreset.SourceSans": {
+		"scope": "lua",
+		"prefix": ["TextFontPreset.SourceSans"],
+		"body": [
+			"TextFontPreset.SourceSans"
+		],
+		"description": "TextFontPreset SourceSans"
+	},
+	"TextFontPreset.PressStart2P": {
+		"scope": "lua",
+		"prefix": ["TextFontPreset.PressStart2P"],
+		"body": [
+			"TextFontPreset.PressStart2P"
+		],
+		"description": "TextFontPreset PressStart2P"
+	},
+	"TextFontPreset.Montserrat": {
+		"scope": "lua",
+		"prefix": ["TextFontPreset.Montserrat"],
+		"body": [
+			"TextFontPreset.Montserrat"
+		],
+		"description": "TextFontPreset Montserrat"
+	},
+	"TextFontPreset.RobotoMono": {
+		"scope": "lua",
+		"prefix": ["TextFontPreset.RobotoMono"],
+		"body": [
+			"TextFontPreset.RobotoMono"
+		],
+		"description": "TextFontPreset RobotoMono"
+	},
+	"TextFontPreset.Rubik": {
+		"scope": "lua",
+		"prefix": ["TextFontPreset.Rubik"],
+		"body": [
+			"TextFontPreset.Rubik"
+		],
+		"description": "TextFontPreset Rubik"
+	},
+	"TextFontPreset.Poppins": {
+		"scope": "lua",
+		"prefix": ["TextFontPreset.Poppins"],
+		"body": [
+			"TextFontPreset.Poppins"
+		],
+		"description": "TextFontPreset Poppins"
+	},
+	"TextFontPreset.Domine": {
+		"scope": "lua",
+		"prefix": ["TextFontPreset.Domine"],
+		"body": [
+			"TextFontPreset.Domine"
+		],
+		"description": "TextFontPreset Domine"
+	},
+	"TextFontPreset.Fredoka": {
+		"scope": "lua",
+		"prefix": ["TextFontPreset.Fredoka"],
+		"body": [
+			"TextFontPreset.Fredoka"
+		],
+		"description": "TextFontPreset Fredoka"
+	},
+	"TextFontPreset.ComicNeue": {
+		"scope": "lua",
+		"prefix": ["TextFontPreset.ComicNeue"],
+		"body": [
+			"TextFontPreset.ComicNeue"
+		],
+		"description": "TextFontPreset ComicNeue"
+	},
+	"TextFontPreset.Orbitron": {
+		"scope": "lua",
+		"prefix": ["TextFontPreset.Orbitron"],
+		"body": [
+			"TextFontPreset.Orbitron"
+		],
+		"description": "TextFontPreset Orbitron"
+	},
+}

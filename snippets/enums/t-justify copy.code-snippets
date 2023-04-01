@@ -1,0 +1,42 @@
+{
+	"TextJustify.Left": {
+		"scope": "lua",
+		"prefix": ["TextJustify.Left"],
+		"body": [
+			"TextJustify.Left"
+		],
+		"description": "TextJustify Left"
+	},
+	"TextJustify.Center": {
+		"scope": "lua",
+		"prefix": ["TextJustify.Center"],
+		"body": [
+			"TextJustify.Center"
+		],
+		"description": "TextJustify Center"
+	},
+	"TextJustify.Right": {
+		"scope": "lua",
+		"prefix": ["TextJustify.Right"],
+		"body": [
+			"TextJustify.Right"
+		],
+		"description": "TextJustify Right"
+	},
+	"TextJustify.Justify": {
+		"scope": "lua",
+		"prefix": ["TextJustify.Justify"],
+		"body": [
+			"TextJustify.Justify"
+		],
+		"description": "TextJustify Justify"
+	},
+	"TextJustify.Flush": {
+		"scope": "lua",
+		"prefix": ["TextJustify.Flush"],
+		"body": [
+			"TextJustify.Flush"
+		],
+		"description": "TextJustify Flush"
+	},
+}

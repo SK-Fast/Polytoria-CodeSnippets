@@ -1,0 +1,400 @@
+{
+    "Game": {
+		"scope": "lua",
+		"prefix": ["game"],
+		"body": ["game"],
+		"description": "Get game."
+	},
+	"Environment": {
+		"scope": "lua",
+		"prefix": ["Environment"],
+		"body": ["game['Environment']"],
+		"description": "Get Environment."
+	},
+    "Players": {
+		"scope": "lua",
+		"prefix": ["Players"],
+		"body": ["game['Players']"],
+		"description": "Get Players Service."
+	},
+	"LocalPlayer": {
+		"scope": "lua",
+		"prefix": ["LocalPlayer"],
+		"body": ["game['Players'].LocalPlayer"],
+		"description": "Get LocalPlayer."
+	},
+	"Hidden": {
+		"scope": "lua",
+		"prefix": ["Hidden"],
+		"body": ["game[\"Hidden\"]"],
+		"description": "Get Hidden."
+	},
+	"ScriptService": {
+		"scope": "lua",
+		"prefix": ["ScriptService"],
+		"body": ["game[\"ScriptService\"]"],
+		"description": "Get ScriptService."
+	},
+    "Instance.new": {
+		"scope": "lua",
+		"prefix": ["Instance.New"],
+		"body": ["Instance.New('$1')"],
+		"description": "Create new Instance."
+	},
+	"Touched": {
+		"scope": "lua",
+		"prefix": ["Touched"],
+		"body": [
+			"${1}.Touched:Connect(${2:function(hit)",
+			"\t",
+			"end})"
+		],
+		"description": "On Instance Touched."
+	},
+    "Rendered": {
+		"scope": "lua",
+		"prefix": ["Rendered"],
+		"body": [
+			"game.Rendered:Connect(${2:function(deltaTime)",
+			"\t",
+			"end})"
+		],
+		"description": "On Game rendered."
+	},
+	"Clicked": {
+		"scope": "lua",
+		"prefix": ["Clicked"],
+		"body": [
+			"${1}.Clicked:Connect(${2:function(plr)",
+			"\t",
+			"end})"
+		],
+		"description": "On Instance Clicked."
+	},
+	"ChildAdded": {
+		"scope": "lua",
+		"prefix": [".ChildAdded"],
+		"body": [
+			"${1:object}.ChildAdded:Connect(${2:function(child)",
+			"\t",
+			"end})"
+		],
+		"description": "Gets triggered when a child instance is added."
+	},
+	"ChildRemoved": {
+		"scope": "lua",
+		"prefix": [".ChildRemoved"],
+		"body": [
+			"${1:object}.ChildRemoved:Connect(${2:function(child)",
+			"\t",
+			"end})"
+		],
+		"description": "Gets triggered when a child instance is removed."
+	},
+	"TouchEnded": {
+		"scope": "lua",
+		"prefix": ["TouchEnded"],
+		"body": [
+			"${1:object}.TouchEnded:Connect(${2:function(hit)",
+			"\t",
+			"end})"
+		],
+		"description": "Gets triggered when this instance is stopped being touched by another instance."
+	},
+	":Clone": {
+		"scope": "lua",
+		"prefix": [":Clone"],
+		"body": [
+			":Clone('$2')"
+		],
+		"description": "Clone object."
+	},
+	":Destroy": {
+		"scope": "lua",
+		"prefix": [":Destroy"],
+		"body": [
+			":Destroy()"
+		],
+		"description": "Destroy object."
+	},
+	".LookAt": {
+		"scope": "lua",
+		"prefix": [".LookAt"],
+		"body": [
+			".LookAt($1)"
+		],
+		"description": "Rotates the DynamicInstance so that the forward vector looks at the target."
+	},
+    ".Translate": {
+		"scope": "lua",
+		"prefix": [".Translate"],
+		"body": [
+			".Translate($1)"
+		],
+		"description": "Moves the transform in the direction and distance of translation."
+	},
+	":FindChild": {
+		"scope": "lua",
+		"prefix": [":FindChild"],
+		"body": [
+			":FindChild('$1')"
+		],
+		"description": "Find child by name in object."
+	},
+	":FindChildByClass": {
+		"scope": "lua",
+		"prefix": [":FindChildByClass"],
+		"body": [
+			":FindChildByClass('$1')"
+		],
+		"description": "Find child by class in object."
+	},
+	":GetChildren": {
+		"scope": "lua",
+		"prefix": [":GetChildren"],
+		"body": [
+			":GetChildren()"
+		],
+		"description": "Get children in object."
+	},
+	":GetChildrenOfClass": {
+		"scope": "lua",
+		"prefix": [":GetChildrenOfClass"],
+		"body": [
+			":GetChildrenOfClass('$1')"
+		],
+		"description": "Get children of class in object."
+	},
+	":GetParent": {
+		"scope": "lua",
+		"prefix": [":GetParent"],
+		"body": [
+			":GetParent()"
+		],
+		"description": "Get object's parent."
+	},
+	":IsA": {
+		"scope": "lua",
+		"prefix": [":IsA"],
+		"body": [
+			":IsA('$1')"
+		],
+		"description": "Returns whether the instance is of the specified class."
+	},
+	":IsDescendantOf": {
+		"scope": "lua",
+		"prefix": [":IsDescendantOf"],
+		"body": [
+			":IsDescendantOf($1)"
+		],
+		"description": "Returns true if the instance is a descendant (child, child of child, etc.) of the specified instance."
+	},
+	":SetParent": {
+		"scope": "lua",
+		"prefix": [":SetParent"],
+		"body": [
+			":SetParent($1)"
+		],
+		"description": "Set parent of the object."
+	},
+	".CanReparent": {
+		"scope": "lua",
+		"prefix": [".CanReparent"],
+		"body": [
+			".CanReparent"
+		],
+		"description": "Returns whether this instance can be reparented/deleted or not."
+	},
+	".ClassName": {
+		"scope": "lua",
+		"prefix": [".ClassName"],
+		"body": [
+			".ClassName"
+		],
+		"description": "Returns the name of the class."
+	},
+	".Name": {
+		"scope": "lua",
+		"prefix": [".Name"],
+		"body": [
+			".Name"
+		],
+		"description": "Specifies the name of an instance."
+	},
+	".Parent": {
+		"scope": "lua",
+		"prefix": [".Parent"],
+		"body": [
+			".Parent"
+		],
+		"description": "Specifies the parent instance of an instance."
+	},
+    ".Forward": {
+		"scope": "lua",
+		"prefix": [".Forward"],
+		"body": [
+			".Forward"
+		],
+		"description": "The forward vector of this DynamicInstance"
+	},
+    ".Up": {
+		"scope": "lua",
+		"prefix": [".Up"],
+		"body": [
+			".Up"
+		],
+		"description": "The up vector of this DynamicInstance"
+	},
+    ".Right": {
+		"scope": "lua",
+		"prefix": [".Right"],
+		"body": [
+			".Right"
+		],
+		"description": "The right vector of this DynamicInstance"
+	},
+    ".LocalPosition": {
+		"scope": "lua",
+		"prefix": [".LocalPosition"],
+		"body": [
+			".LocalPosition"
+		],
+		"description": "Specifies the position relative to the parent of an instance."
+	},
+    ".LocalRotation": {
+		"scope": "lua",
+		"prefix": [".LocalRotation"],
+		"body": [
+			".LocalRotation"
+		],
+		"description": "Specifies the rotation relative to the parent of an instance."
+	},
+    ".LocalSize": {
+		"scope": "lua",
+		"prefix": [".LocalSize"],
+		"body": [
+			".LocalSize"
+		],
+		"description": "Specifies the size relative to the parent of an instance."
+	},
+    ".Position": {
+		"scope": "lua",
+		"prefix": [".Position"],
+		"body": [
+			".Position"
+		],
+		"description": "Specifies the position of an instance."
+	},
+    ".Rotation": {
+		"scope": "lua",
+		"prefix": [".Rotation"],
+		"body": [
+			".Rotation"
+		],
+		"description": "Specifies the rotation of an instance."
+	},
+    ".Size": {
+		"scope": "lua",
+		"prefix": [".Size"],
+		"body": [
+			".Size"
+		],
+		"description": "Specifies the size of an instance."
+	},
+	".Shared": {
+		"scope": "lua",
+		"prefix": [".Shared"],
+		"body": [
+			"${1}.Shared"
+		],
+		"description": "An empty table you can use to hold metadata about anything on any object or player you want. Does not sync client <-> server."
+	},
+	".Gravity": {
+		"scope": "lua",
+		"prefix": [".Gravity"],
+		"body": [
+			"game['Environment'].Gravity"
+		],
+		"description": "Determines the constant force to apply to all physics-based objects in the world."
+	},
+	".Skybox": {
+		"scope": "lua",
+		"prefix": [".Skybox"],
+		"body": [
+			"game['Environment'].Skybox"
+		],
+		"description": "Specifies which skybox to use in the game."
+	},
+    ".GameID": {
+		"scope": "lua",
+		"prefix": [".GameID"],
+		"body": [
+			"game.GameID"
+		],
+		"description": "The ID of the current game. Return 0 if local test."
+	},
+    ".InstanceCount": {
+		"scope": "lua",
+		"prefix": ["game.InstanceCount"],
+		"body": [
+			".InstanceCount"
+		],
+		"description": "The amount of instances currently loaded on the server."
+	},
+    ".LocalInstanceCount": {
+		"scope": "lua",
+		"prefix": [".LocalInstanceCount"],
+		"body": [
+			"game.LocalInstanceCount"
+		],
+		"description": "The amount of instances currently loaded on the client."
+	},
+    ".PlayersConnected": {
+		"scope": "lua",
+		"prefix": [".PlayersConnected"],
+		"body": [
+			"game.PlayersConnected"
+		],
+		"description": "The amount of players on the server."
+	},
+	"Vector3.New": {
+		"scope": "lua",
+		"prefix": ["Vector3.New"],
+		"body": [
+			"Vector3.New(${1:0}, ${2:0}, ${3:0})"
+		],
+		"description": "Construct new Vector3."
+	},
+	"Vector2.New": {
+		"scope": "lua",
+		"prefix": ["Vector2.New"],
+		"body": [
+			"Vector2.New(${1:0}, ${2:0})"
+		],
+		"description": "Construct new Vector2."
+	},
+	"CreateExplosion": {
+		"scope": "lua",
+		"prefix": ["CreateExplosion"],
+		"body": [
+			"game['Environment']:CreateExplosion(${1:Vector3.New(0,0,0)}, ${2:30}, ${3:1000}, ${4:false})"
+		],
+		"description": "Create Explosion."
+	},
+	"Raycast": {
+		"scope": "lua",
+		"prefix": [":Raycast"],
+		"body": [
+			"game['Environment']:Raycast(${1:origin}, ${2:direction}${3:, max_distance})"
+		],
+		"description": "Casts a ray from origin with a specified direction and returns a RayResult for the first hit object."
+	},
+	"RaycastAll": {
+		"scope": "lua",
+		"prefix": [":RaycastAll"],
+		"body": [
+			"game['Environment']:RaycastAll(${1:origin}, ${2:direction}${3:, max_distance})"
+		],
+		"description": "Casts a ray from origin with a specified direction and returns a RayResult for the first hit object."
+	},
+}

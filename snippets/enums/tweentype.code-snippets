@@ -1,0 +1,260 @@
+{
+    "TweenType.linear": {
+		"scope": "lua",
+		"prefix": ["TweenType.linear"],
+		"body": [
+			"TweenType.linear"
+		],
+		"description": "TweenType linear"
+	},
+
+	"TweenType.punch": {
+		"scope": "lua",
+		"prefix": ["TweenType.punch"],
+		"body": [
+			"TweenType.punch"
+		],
+		"description": "TweenType punch"
+	},
+
+	"TweenType.easeInBack": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInBack"],
+		"body": [
+			"TweenType.easeInBack"
+		],
+		"description": "TweenType easeInBack"
+	},
+	"TweenType.easeInBounce": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInBounce"],
+		"body": [
+			"TweenType.easeInBounce"
+		],
+		"description": "TweenType easeInBounce"
+	},
+	"TweenType.easeInCirc": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInCirc"],
+		"body": [
+			"TweenType.easeInCirc"
+		],
+		"description": "TweenType easeInCirc"
+	},
+	"TweenType.easeInCubic": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInCubic"],
+		"body": [
+			"TweenType.easeInCubic"
+		],
+		"description": "TweenType easeInCubic"
+	},
+	"TweenType.easeInElastic": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInElastic"],
+		"body": [
+			"TweenType.easeInElastic"
+		],
+		"description": "TweenType easeInElastic"
+	},
+	"TweenType.easeInExpo": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInExpo"],
+		"body": [
+			"TweenType.easeInExpo"
+		],
+		"description": "TweenType easeInExpo"
+	},
+	"TweenType.easeInOutBack": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInOutBack"],
+		"body": [
+			"TweenType.easeInOutBack"
+		],
+		"description": "TweenType easeInOutBack"
+	},
+	"TweenType.easeInOutBounce": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInOutBounce"],
+		"body": [
+			"TweenType.easeInOutBounce"
+		],
+		"description": "TweenType easeInOutBounce"
+	},
+	"TweenType.easeInOutCirc": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInOutCirc"],
+		"body": [
+			"TweenType.easeInOutCirc"
+		],
+		"description": "TweenType easeInOutCirc"
+	},
+	"TweenType.easeInOutCubic": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInOutCubic"],
+		"body": [
+			"TweenType.easeInOutCubic"
+		],
+		"description": "TweenType easeInOutCubic"
+	},
+	"TweenType.easeInOutElastic": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInOutElastic"],
+		"body": [
+			"TweenType.easeInOutElastic"
+		],
+		"description": "TweenType easeInOutElastic"
+	},
+	"TweenType.easeInOutExpo": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInOutExpo"],
+		"body": [
+			"TweenType.easeInOutExpo"
+		],
+		"description": "TweenType easeInOutExpo"
+	},
+	"TweenType.easeInOutQuad": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInOutQuad"],
+		"body": [
+			"TweenType.easeInOutQuad"
+		],
+		"description": "TweenType easeInOutQuad"
+	},
+	"TweenType.easeInOutQuart": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInOutQuart"],
+		"body": [
+			"TweenType.easeInOutQuart"
+		],
+		"description": "TweenType easeInOutQuart"
+	},
+	"TweenType.easeInOutQuint": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInOutQuint"],
+		"body": [
+			"TweenType.easeInOutQuint"
+		],
+		"description": "TweenType easeInOutQuint"
+	},
+	"TweenType.easeInOutSine": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInOutSine"],
+		"body": [
+			"TweenType.easeInOutSine"
+		],
+		"description": "TweenType easeInOutSine"
+	},
+	"TweenType.easeInQuad": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInQuad"],
+		"body": [
+			"TweenType.easeInQuad"
+		],
+		"description": "TweenType easeInQuad"
+	},
+	"TweenType.easeInQuart": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInQuart"],
+		"body": [
+			"TweenType.easeInQuart"
+		],
+		"description": "TweenType easeInQuart"
+	},
+	"TweenType.easeInQuint": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInQuint"],
+		"body": [
+			"TweenType.easeInQuint"
+		],
+		"description": "TweenType easeInQuint"
+	},
+	"TweenType.easeInSine": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeInSine"],
+		"body": [
+			"TweenType.easeInSine"
+		],
+		"description": "TweenType easeInSine"
+	},
+	"TweenType.easeOutBack": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeOutBack"],
+		"body": [
+			"TweenType.easeOutBack"
+		],
+		"description": "TweenType easeOutBack"
+	},
+	"TweenType.easeOutBounce": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeOutBounce"],
+		"body": [
+			"TweenType.easeOutBounce"
+		],
+		"description": "TweenType easeOutBounce"
+	},
+	"TweenType.easeOutCirc": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeOutCirc"],
+		"body": [
+			"TweenType.easeOutCirc"
+		],
+		"description": "TweenType easeOutCirc"
+	},
+	"TweenType.easeOutCubic": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeOutCubic"],
+		"body": [
+			"TweenType.easeOutCubic"
+		],
+		"description": "TweenType easeOutCubic"
+	},
+	"TweenType.easeOutElastic": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeOutElastic"],
+		"body": [
+			"TweenType.easeOutElastic"
+		],
+		"description": "TweenType easeOutElastic"
+	},
+	"TweenType.easeOutExpo": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeOutExpo"],
+		"body": [
+			"TweenType.easeOutExpo"
+		],
+		"description": "TweenType easeOutExpo"
+	},
+	"TweenType.easeOutQuad": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeOutQuad"],
+		"body": [
+			"TweenType.easeOutQuad"
+		],
+		"description": "TweenType easeOutQuad"
+	},
+	"TweenType.easeOutQuart": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeOutQuart"],
+		"body": [
+			"TweenType.easeOutQuart"
+		],
+		"description": "TweenType easeOutQuart"
+	},
+	"TweenType.easeOutQuint": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeOutQuint"],
+		"body": [
+			"TweenType.easeOutQuint"
+		],
+		"description": "TweenType easeOutQuint"
+	},
+	"TweenType.easeOutSine": {
+		"scope": "lua",
+		"prefix": ["TweenType.easeOutSine"],
+		"body": [
+			"TweenType.easeOutSine"
+		],
+		"description": "TweenType easeOutSine"
+	},
+}

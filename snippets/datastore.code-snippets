@@ -1,0 +1,74 @@
+{
+	"wait_datastore": {
+		"scope": "lua",
+		"prefix": ["while ds.Loading"],
+		"body": [
+			"while ds.Loading do",
+			"\twait()",
+			"end",
+			""
+		],
+		"description": "Wait for datastore to load"
+	},
+	"GetDatastore": {
+		"scope": "lua",
+		"prefix": ["GetDatastore"],
+		"body": [
+			"Datastore:GetDatastore(${1:\"Player_\" .. player.UserID})"
+		],
+		"description": "Gets a Datastore object from the Datastore service."
+	},
+	"ds:Get": {
+		"scope": "lua",
+		"prefix": ["ds:Get"],
+		"body": [
+			"ds:Get(${1:\"Coins\"}, function(value, success, err)",
+			"\tif not success then",
+			"\t\tprint(err)",
+			"\telse",
+			"\t\t${2}",
+			"\tend",
+			"end)"
+		],
+		"description": "Gets the value of a key in the datastore."
+	},
+	"ds:Set": {
+		"scope": "lua",
+		"prefix": ["ds:Set"],
+		"body": [
+			"ds:Set(${1:\"Coins\"}, ${2:100}, function(success, err)",
+			"\tif not success then",
+			"\t\tprint(err)",
+			"\telse",
+			"\t\t${3}",
+			"\tend",
+			"end)"
+		],
+		"description": "Sets the value of a key in the datastore."
+	},
+	"ds:Remove": {
+		"scope": "lua",
+		"prefix": ["ds:Remove"],
+		"body": [
+			"ds:Remove(${1:\"Coins\"}, function(success, err)",
+			"\tif not success then",
+			"\t\tprint(err)",
+			"\telse",
+			"\t\t${2}",
+			"\tend",
+			"end)"
+		],
+		"description": "Removes a value from the datastore."
+	},
+	"ds.Loaded": {
+		"scope": "lua",
+		"prefix": ["ds.Loaded"],
+		"body": [
+			"ds.Loaded:Connect(function()",
+			"\t${1}",
+			"end)",
+			""
+		],
+		"description": "Gets triggered when the Datastore has finished loading."
+	},
+}

@@ -1,0 +1,34 @@
+{
+    "json.null": {
+		"scope": "lua",
+		"prefix": ["json.null"],
+		"body": [
+			"json.null()"
+		],
+		"description": "Returns a special value which is a representation of a null in a json"
+	},
+    "json.isNull": {
+		"scope": "lua",
+		"prefix": ["json.isNull"],
+		"body": [
+			"json.isNull(${1})"
+		],
+		"description": "Returns true if the value specified is a null read from a json"
+	},
+	"json.parse": {
+		"scope": "lua",
+		"prefix": ["json.parse"],
+		"body": [
+			"json.parse($1)"
+		],
+		"description": "Returns a table with the contents of the specified json string"
+	},
+	"json.serialize": {
+		"scope": "lua",
+		"prefix": ["json.serialize"],
+		"body": [
+			"json.serialize(${1:{}})"
+		],
+		"description": "Returns a json string with the contents of the specified table.",
+	},
+}

@@ -1,0 +1,18 @@
+{
+    "Vector2.New": {
+		"scope": "lua",
+		"prefix": ["Vector2.New", "v2"],
+		"body": [
+			"Vector2.New(${1:0}, ${2:0})"
+		],
+		"description": "Creates a new Vector2 with the specified values."
+	},
+	"Vector2.Lerp": {
+		"scope": "lua",
+		"prefix": ["Vector2.Lerp"],
+		"body": [
+			"Vector2.Lerp(${1:a}, ${2:b}, ${3:t})"
+		],
+		"description": "Linearly interpolates between two points."
+	},
+}

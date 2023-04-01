@@ -1,0 +1,74 @@
+{
+    "AnchorPreset.TopCenter": {
+		"scope": "lua",
+		"prefix": ["AnchorPreset.TopCenter"],
+		"body": [
+			"AnchorPreset.TopCenter"
+		],
+		"description": "AnchorPreset TopCenter"
+	},
+    "AnchorPreset.Center": {
+		"scope": "lua",
+		"prefix": ["AnchorPreset.Center"],
+		"body": [
+			"AnchorPreset.Center"
+		],
+		"description": "AnchorPreset Center"
+	},
+	"AnchorPreset.BottomCenter": {
+		"scope": "lua",
+		"prefix": ["AnchorPreset.BottomCenter"],
+		"body": [
+			"AnchorPreset.BottomCenter"
+		],
+		"description": "AnchorPreset BottomCenter"
+	},
+	"AnchorPreset.Left": {
+		"scope": "lua",
+		"prefix": ["AnchorPreset.Left"],
+		"body": [
+			"AnchorPreset.Left"
+		],
+		"description": "AnchorPreset Left"
+	},
+	"AnchorPreset.Right": {
+		"scope": "lua",
+		"prefix": ["AnchorPreset.Right"],
+		"body": [
+			"AnchorPreset.Right"
+		],
+		"description": "AnchorPreset Right"
+	},
+	"AnchorPreset.TopLeft": {
+		"scope": "lua",
+		"prefix": ["AnchorPreset.TopLeft"],
+		"body": [
+			"AnchorPreset.TopLeft"
+		],
+		"description": "AnchorPreset TopLeft"
+	},
+	"AnchorPreset.TopRight": {
+		"scope": "lua",
+		"prefix": ["AnchorPreset.TopRight"],
+		"body": [
+			"AnchorPreset.TopRight"
+		],
+		"description": "AnchorPreset TopRight"
+	},
+	"AnchorPreset.BottomLeft": {
+		"scope": "lua",
+		"prefix": ["AnchorPreset.BottomLeft"],
+		"body": [
+			"AnchorPreset.BottomLeft"
+		],
+		"description": "AnchorPreset BottomLeft"
+	},
+	"AnchorPreset.BottomRight": {
+		"scope": "lua",
+		"prefix": ["AnchorPreset.BottomRight"],
+		"body": [
+			"AnchorPreset.BottomRight"
+		],
+		"description": "AnchorPreset BottomRight"
+	},
+}

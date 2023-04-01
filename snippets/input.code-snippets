@@ -1,0 +1,114 @@
+{
+	"Input.KeyDown": {
+		"scope": "lua",
+		"prefix": ["Input.KeyDown"],
+		"body": [
+			"Input.KeyDown:Connect(${1:function(key)",
+			"\tprint(key)",
+			"end})"
+		],
+		"description": "Gets triggered when a key was pressed.",
+	},
+	"Input.KeyUp": {
+		"scope": "lua",
+		"prefix": ["Input.KeyUp"],
+		"body": [
+			"Input.KeyUp:Connect(${1:function(key)",
+			"\tprint(key)",
+			"end})"
+		],
+		"description": "Gets triggered when a key was released.",
+	},
+	"Input.CursorLocked": {
+		"scope": "lua",
+		"prefix": ["Input.CursorLocked"],
+		"body": [
+			"Input.CursorLocked"
+		],
+	},
+	"Input.CursorVisible": {
+		"scope": "lua",
+		"prefix": ["Input.CursorVisible"],
+		"body": [
+			"Input.CursorVisible"
+		],
+	},
+	"Input.MousePosition": {
+		"scope": "lua",
+		"prefix": ["Input.MousePosition"],
+		"body": [
+			"Input.MousePosition"
+		],
+		"description": "Get current mouse position.",
+	},
+	"Input:GetMouseWorldPoint": {
+		"scope": "lua",
+		"prefix": ["Input:GetMouseWorldPoint"],
+		"body": [
+			"Input:GetMouseWorldPoint()"
+		],
+	},
+	"Input:GetMouseWorldPosition": {
+		"scope": "lua",
+		"prefix": ["Input:GetMouseWorldPosition"],
+		"body": [
+			"Input:GetMouseWorldPosition()"
+		],
+	},
+	"Input:ScreenPointToRay": {
+		"scope": "lua",
+		"prefix": ["Input:ScreenPointToRay"],
+		"body": [
+			"Input:ScreenPointToRay(${1:Vector2.New(0,0)})"
+		],
+	},
+	"Input:ScreenToViewportPoint": {
+		"scope": "lua",
+		"prefix": ["Input:ScreenToViewportPoint"],
+		"body": [
+			"Input:ScreenToViewportPoint(${1:Vector2.New(0,0)})"
+		],
+	},
+	"Input:ScreenToWorldPoint": {
+		"scope": "lua",
+		"prefix": ["Input:ScreenToWorldPoint"],
+		"body": [
+			"Input:ScreenToWorldPoint(${1:Vector2.New(0,0)})"
+		],
+	},
+	"Input:ViewportPointToRay": {
+		"scope": "lua",
+		"prefix": ["Input:ViewportPointToRay"],
+		"body": [
+			"Input:ViewportPointToRay(${1:Vector2.New(0,0)})"
+		],
+	},
+	"Input:ViewportToScreenPoint": {
+		"scope": "lua",
+		"prefix": ["Input:ViewportToScreenPoint"],
+		"body": [
+			"Input:ViewportToScreenPoint(${1:Vector2.New(0,0)})"
+		],
+	},
+	"Input:ViewportToWorldPoint": {
+		"scope": "lua",
+		"prefix": ["Input:ViewportToWorldPoint"],
+		"body": [
+			"Input:ViewportToWorldPoint(${1:Vector2.New(0,0)})"
+		],
+	},
+	"Input:WorldToScreenPoint": {
+		"scope": "lua",
+		"prefix": ["Input:WorldToScreenPoint"],
+		"body": [
+			"Input:WorldToScreenPoint(${1:Vector3.New(0,0,0)})"
+		],
+	},
+	"Input:WorldToViewportPoint": {
+		"scope": "lua",
+		"prefix": ["Input:WorldToViewportPoint"],
+		"body": [
+			"Input:WorldToViewportPoint(${1:Vector3.New(0,0,0)})"
+		],
+	},
+}

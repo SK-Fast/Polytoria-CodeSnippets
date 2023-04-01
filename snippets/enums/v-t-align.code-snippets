@@ -1,0 +1,26 @@
+{
+	"TextVerticalAlign.Top": {
+		"scope": "lua",
+		"prefix": ["TextJustify.Top"],
+		"body": [
+			"TextJustify.Top"
+		],
+		"description": "TextJustify Top"
+	},
+	"TextVerticalAlign.Middle": {
+		"scope": "lua",
+		"prefix": ["TextJustify.Middle"],
+		"body": [
+			"TextJustify.Middle"
+		],
+		"description": "TextJustify Middle"
+	},
+	"TextVerticalAlign.Bottom": {
+		"scope": "lua",
+		"prefix": ["TextJustify.Bottom"],
+		"body": [
+			"TextJustify.Bottom"
+		],
+		"description": "TextJustify Bottom"
+	},
+}

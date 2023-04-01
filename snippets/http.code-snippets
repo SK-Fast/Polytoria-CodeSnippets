@@ -1,0 +1,42 @@
+{
+	"Http:Delete": {
+		"scope": "lua",
+		"prefix": ["Http:Delete"],
+		"body": [
+			"Http:Delete('${1:https://example.com/api/delete}', '${2:id=3}' , ${3:function (data, err, errmsg)",
+			"\t",
+			"end}, {})"
+		],
+		"description": "Sends a DELETE request to the specified url."
+	},
+	"Http:Post": {
+		"scope": "lua",
+		"prefix": ["Http:Post"],
+		"body": [
+			"Http:Post('${1:https://example.com/api/Post}', '${2:id=3}' , ${3:function (data, err, errmsg)",
+			"\t",
+			"end}, {})"
+		],
+		"description": "Sends a Post request to the specified url."
+	},
+	"Http:Put": {
+		"scope": "lua",
+		"prefix": ["Http:Put"],
+		"body": [
+			"Http:Put('${1:https://example.com/api/Put}', '${2:id=3}' , ${3:function (data, err, errmsg)",
+			"\t",
+			"end}, {})"
+		],
+		"description": "Sends a Put request to the specified url."
+	},
+	"Http:Get": {
+		"scope": "lua",
+		"prefix": ["Http:Get"],
+		"body": [
+			"Http:Get('${1:https://example.com/}', ${2:function (data, err, errmsg)",
+			"\t",
+			"end}, {})"
+		],
+		"description": "Sends a Get request to the specified url."
+	},
+}

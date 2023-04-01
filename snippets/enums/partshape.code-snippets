@@ -1,0 +1,66 @@
+{
+    "PartShape.Ball": {
+		"scope": "lua",
+		"prefix": ["PartShape.Ball"],
+		"body": [
+			"PartShape.Ball"
+		],
+		"description": "PartShape Ball"
+	},
+	"PartShape.Brick": {
+		"scope": "lua",
+		"prefix": ["PartShape.Brick"],
+		"body": [
+			"PartShape.Brick"
+		],
+		"description": "PartShape Brick"
+	},
+	"PartShape.Cylinder": {
+		"scope": "lua",
+		"prefix": ["PartShape.Cylinder"],
+		"body": [
+			"PartShape.Cylinder"
+		],
+		"description": "PartShape Cylinder"
+	},
+	"PartShape.Wedge": {
+		"scope": "lua",
+		"prefix": ["PartShape.Wedge"],
+		"body": [
+			"PartShape.Wedge"
+		],
+		"description": "PartShape Wedge"
+	},
+	"PartShape.Truss": {
+		"scope": "lua",
+		"prefix": ["PartShape.Truss"],
+		"body": [
+			"PartShape.Truss"
+		],
+		"description": "PartShape Truss"
+	},
+	"PartShape.TrussFrame": {
+		"scope": "lua",
+		"prefix": ["PartShape.TrussFrame"],
+		"body": [
+			"PartShape.TrussFrame"
+		],
+		"description": "PartShape TrussFrame"
+	},
+	"PartShape.Bevel": {
+		"scope": "lua",
+		"prefix": ["PartShape.Bevel"],
+		"body": [
+			"PartShape.Bevel"
+		],
+		"description": "PartShape Bevel"
+	},
+	"PartShape.QuarterPipe": {
+		"scope": "lua",
+		"prefix": ["PartShape.QuarterPipe"],
+		"body": [
+			"PartShape.QuarterPipe"
+		],
+		"description": "PartShape QuarterPipe"
+	},
+}

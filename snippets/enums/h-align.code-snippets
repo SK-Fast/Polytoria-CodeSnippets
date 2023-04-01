@@ -1,0 +1,26 @@
+{
+	"HorizontalAlignment.Left": {
+		"scope": "lua",
+		"prefix": ["HorizontalAlignment.Left"],
+		"body": [
+			"HorizontalAlignment.Left"
+		],
+		"description": "HorizontalAlignment Left"
+	},
+	"HorizontalAlignment.Center": {
+		"scope": "lua",
+		"prefix": ["HorizontalAlignment.Center"],
+		"body": [
+			"HorizontalAlignment.Center"
+		],
+		"description": "HorizontalAlignment Center"
+	},
+	"HorizontalAlignment.Right": {
+		"scope": "lua",
+		"prefix": ["HorizontalAlignment.Right"],
+		"body": [
+			"HorizontalAlignment.Right"
+		],
+		"description": "HorizontalAlignment Right"
+	},
+}

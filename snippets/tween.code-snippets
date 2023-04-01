@@ -1,0 +1,120 @@
+{
+    "Tween:Cancel": {
+		"scope": "lua",
+		"prefix": ["CancelTween","Tween:Cancel"],
+		"body": [
+			"Tween:Cancel(${1:'id'})"
+		],
+		"description": "Cancel tween with specified ID.",
+	},
+    "Tween:CancelAll": {
+		"scope": "lua",
+		"prefix": ["CancelAllTweens","Tween:CancelAll"],
+		"body": [
+			"Tween:CancelAll()"
+		],
+		"description": "Cancel all running tweens.",
+	},
+    "Tween:Pause": {
+		"scope": "lua",
+		"prefix": ["PauseTween","Tween:Pause"],
+		"body": [
+			"Tween:Pause(${1:'id'})"
+		],
+		"description": "Pause tween with specified ID.",
+	},
+    "Tween:Resume": {
+		"scope": "lua",
+		"prefix": ["ResumeTween","Tween:Resume"],
+		"body": [
+			"Tween:Resume(${1:'id'})"
+		],
+		"description": "Resume tween with specified ID.",
+	},
+    "Tween:IsPaused": {
+		"scope": "lua",
+		"prefix": ["IsTweenPaused","Tween:IsPaused"],
+		"body": [
+			"Tween:IsPaused(${1:'id'})"
+		],
+		"description": "Check if tween with specified ID is paused.",
+	},
+	"Tween:TweenColor": {
+		"scope": "lua",
+		"prefix": ["TweenColor","Tween:TweenColor"],
+		"body": [
+			"Tween:TweenColor(${1:Color.New(1,1,1,1)}, ${2:Color.New(1,1,1,0)}, ${3:5}, ${4:function(val)",
+			"\tprint(val)",
+			"end}, ${5:TweenType.linear}, ${6:function()",
+			"\tprint('Tweening Finished!')",
+			"end})"
+		],
+		"description": "Tweens a color between two specified values.",
+	},
+	"Tween:TweenNumber": {
+		"scope": "lua",
+		"prefix": ["TweenNumber","Tween:TweenNumber"],
+		"body": [
+			"Tween:TweenNumber(${1:0}, ${2:20}, ${3:5}, ${4:function(val)",
+			"\tprint(val)",
+			"end}, ${5:TweenType.linear}, ${6:function()",
+			"\tprint('Tweening Finished!')",
+			"end})"
+		],
+		"description": "Tweens a number between two specified values.",
+	},
+	"Tween:TweenVector3": {
+		"scope": "lua",
+		"prefix": ["TweenVector3","Tween:TweenVector3"],
+		"body": [
+			"Tween:TweenVector3(${1:Vector3.New(0,0,0)}, ${2:Vector3.New(50,50,50)}, ${3:5}, ${4:function(val)",
+			"\tprint(val)",
+			"end}, ${5:TweenType.linear}, ${6:function()",
+			"\tprint('Tweening Finished!')",
+			"end})"
+		],
+		"description": "Tweens a number between two specified values.",
+	},
+    "Tween:TweenVector2": {
+		"scope": "lua",
+		"prefix": ["TweenVector2","Tween:TweenVector2"],
+		"body": [
+			"Tween:TweenVector2(${1:Vector2.New(0,0)}, ${2:Vector2.New(50,50)}, ${3:5}, ${4:function(val)",
+			"\tprint(val)",
+			"end}, ${5:TweenType.linear}, ${6:function()",
+			"\tprint('Tweening Finished!')",
+			"end})"
+		],
+		"description": "Tweens a number between two specified values.",
+	},
+	"Tween:TweenPosition": {
+		"scope": "lua",
+		"prefix": ["TweenPosition","Tween:TweenPosition"],
+		"body": [
+			"Tween:TweenPosition(${1:part}, ${2:Vector3.New(100, 0, 0)}, ${3:5}, ${4:TweenType.linear}, ${5:function()",
+			"\tprint('Tweening Finished!')",
+			"end})"
+		],
+		"description": "Tweens the position of a DynamicInstance",
+	},
+	"Tween:TweenRotation": {
+		"scope": "lua",
+		"prefix": ["TweenRotation","Tween:TweenRotation"],
+		"body": [
+			"Tween:TweenRotation(${1:part}, ${2:Vector3.New(0, 0, 90)}, ${3:5}, ${4:TweenType.linear}, ${5:function()",
+			"\tprint('Tweening Finished!')",
+			"end})"
+		],
+		"description": "Tweens the rotation of a DynamicInstance",
+	},
+	"Tween:TweenSize": {
+		"scope": "lua",
+		"prefix": ["TweenSize","Tween:TweenSize"],
+		"body": [
+			"Tween:TweenSize(${1:part}, ${2:Vector3.New(5, 5, 5)}, ${3:5}, ${4:TweenType.linear}, ${5:function()",
+			"\tprint('Tweening Finished!')",
+			"end})"
+		],
+		"description": "Tweens the size of a DynamicInstance",
+	},
+}

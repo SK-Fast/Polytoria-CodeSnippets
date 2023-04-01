@@ -1,0 +1,138 @@
+{
+    "PartMaterial.SmoothPlastic": {
+		"scope": "lua",
+		"prefix": ["PartMaterial.SmoothPlastic"],
+		"body": [
+			"PartMaterial.SmoothPlastic"
+		],
+		"description": "PartMaterial SmoothPlastic"
+	},
+	"PartMaterial.Wood": {
+		"scope": "lua",
+		"prefix": ["PartMaterial.Wood"],
+		"body": [
+			"PartMaterial.Wood"
+		],
+		"description": "PartMaterial Wood"
+	},
+	"PartMaterial.Concrete": {
+		"scope": "lua",
+		"prefix": ["PartMaterial.Concrete"],
+		"body": [
+			"PartMaterial.Concrete"
+		],
+		"description": "PartMaterial Concrete"
+	},
+	"PartMaterial.Neon": {
+		"scope": "lua",
+		"prefix": ["PartMaterial.Neon"],
+		"body": [
+			"PartMaterial.Neon"
+		],
+		"description": "PartMaterial Neon"
+	},
+	"PartMaterial.Metal": {
+		"scope": "lua",
+		"prefix": ["PartMaterial.Metal"],
+		"body": [
+			"PartMaterial.Metal"
+		],
+		"description": "PartMaterial Metal"
+	},
+	"PartMaterial.Brick": {
+		"scope": "lua",
+		"prefix": ["PartMaterial.Brick"],
+		"body": [
+			"PartMaterial.Brick"
+		],
+		"description": "PartMaterial Brick"
+	},
+	"PartMaterial.Grass": {
+		"scope": "lua",
+		"prefix": ["PartMaterial.Grass"],
+		"body": [
+			"PartMaterial.Grass"
+		],
+		"description": "PartMaterial Grass"
+	},
+	"PartMaterial.Dirt": {
+		"scope": "lua",
+		"prefix": ["PartMaterial.Dirt"],
+		"body": [
+			"PartMaterial.Dirt"
+		],
+		"description": "PartMaterial Dirt"
+	},
+	"PartMaterial.Stone": {
+		"scope": "lua",
+		"prefix": ["PartMaterial.Stone"],
+		"body": [
+			"PartMaterial.Stone"
+		],
+		"description": "PartMaterial Stone"
+	},
+	"PartMaterial.Snow": {
+		"scope": "lua",
+		"prefix": ["PartMaterial.Snow"],
+		"body": [
+			"PartMaterial.Snow"
+		],
+		"description": "PartMaterial Snow"
+	},
+	"PartMaterial.Ice": {
+		"scope": "lua",
+		"prefix": ["PartMaterial.Ice"],
+		"body": [
+			"PartMaterial.Ice"
+		],
+		"description": "PartMaterial Ice"
+	},
+	"PartMaterial.RustyIron": {
+		"scope": "lua",
+		"prefix": ["PartMaterial.RustyIron"],
+		"body": [
+			"PartMaterial.RustyIron"
+		],
+		"description": "PartMaterial RustyIron"
+	},
+	"PartMaterial.Sand": {
+		"scope": "lua",
+		"prefix": ["PartMaterial.Sand"],
+		"body": [
+			"PartMaterial.Sand"
+		],
+		"description": "PartMaterial Sand"
+	},
+	"PartMaterial.Sandstone": {
+		"scope": "lua",
+		"prefix": ["PartMaterial.Sandstone"],
+		"body": [
+			"PartMaterial.Sandstone"
+		],
+		"description": "PartMaterial Sandstone"
+	},
+	"PartMaterial.Plastic": {
+		"scope": "lua",
+		"prefix": ["PartMaterial.Plastic"],
+		"body": [
+			"PartMaterial.Plastic"
+		],
+		"description": "PartMaterial Plastic"
+	},
+	"PartMaterial.Plywood": {
+		"scope": "lua",
+		"prefix": ["PartMaterial.Plywood"],
+		"body": [
+			"PartMaterial.Plywood"
+		],
+		"description": "PartMaterial Plywood"
+	},
+	"PartMaterial.Planks": {
+		"scope": "lua",
+		"prefix": ["PartMaterial.Planks"],
+		"body": [
+			"PartMaterial.Planks"
+		],
+		"description": "PartMaterial Planks"
+	},
+}

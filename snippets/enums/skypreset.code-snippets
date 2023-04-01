@@ -1,0 +1,170 @@
+{
+    "SkyboxPreset.Day1": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Day1"],
+		"body": [
+			"SkyboxPreset.Day1"
+		],
+		"description": "SkyboxPreset Day1"
+	},
+	"SkyboxPreset.Day2": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Day2"],
+		"body": [
+			"SkyboxPreset.Day2"
+		],
+		"description": "SkyboxPreset Day2"
+	},
+	"SkyboxPreset.Day3": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Day3"],
+		"body": [
+			"SkyboxPreset.Day3"
+		],
+		"description": "SkyboxPreset Day3"
+	},
+	"SkyboxPreset.Day4": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Day4"],
+		"body": [
+			"SkyboxPreset.Day4"
+		],
+		"description": "SkyboxPreset Day4"
+	},
+	"SkyboxPreset.Day5": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Day5"],
+		"body": [
+			"SkyboxPreset.Day5"
+		],
+		"description": "SkyboxPreset Day5"
+	},
+	"SkyboxPreset.Day6": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Day6"],
+		"body": [
+			"SkyboxPreset.Day6"
+		],
+		"description": "SkyboxPreset Day6"
+	},
+	"SkyboxPreset.Day7": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Day7"],
+		"body": [
+			"SkyboxPreset.Day7"
+		],
+		"description": "SkyboxPreset Day7"
+	},
+	"SkyboxPreset.Morning1": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Morning1"],
+		"body": [
+			"SkyboxPreset.Morning1"
+		],
+		"description": "SkyboxPreset Morning1"
+	},
+	"SkyboxPreset.Morning2": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Morning2"],
+		"body": [
+			"SkyboxPreset.Morning2"
+		],
+		"description": "SkyboxPreset Morning2"
+	},
+	"SkyboxPreset.Morning3": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Morning3"],
+		"body": [
+			"SkyboxPreset.Morning3"
+		],
+		"description": "SkyboxPreset Morning3"
+	},
+	"SkyboxPreset.Morning4": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Morning4"],
+		"body": [
+			"SkyboxPreset.Morning4"
+		],
+		"description": "SkyboxPreset Morning4"
+	},
+	"SkyboxPreset.Night1": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Night1"],
+		"body": [
+			"SkyboxPreset.Night1"
+		],
+		"description": "SkyboxPreset Night1"
+	},
+	"SkyboxPreset.Night2": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Night2"],
+		"body": [
+			"SkyboxPreset.Night2"
+		],
+		"description": "SkyboxPreset Night2"
+	},
+	"SkyboxPreset.Night3": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Night3"],
+		"body": [
+			"SkyboxPreset.Night3"
+		],
+		"description": "SkyboxPreset Night3"
+	},
+	"SkyboxPreset.Night4": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Night4"],
+		"body": [
+			"SkyboxPreset.Night4"
+		],
+		"description": "SkyboxPreset Night4"
+	},
+	"SkyboxPreset.Night5": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Night5"],
+		"body": [
+			"SkyboxPreset.Night5"
+		],
+		"description": "SkyboxPreset Night5"
+	},
+	"SkyboxPreset.Sunset1": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Sunset1"],
+		"body": [
+			"SkyboxPreset.Sunset1"
+		],
+		"description": "SkyboxPreset Sunset1"
+	},
+	"SkyboxPreset.Sunset2": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Sunset2"],
+		"body": [
+			"SkyboxPreset.Sunset2"
+		],
+		"description": "SkyboxPreset Sunset2"
+	},
+	"SkyboxPreset.Sunset3": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Sunset3"],
+		"body": [
+			"SkyboxPreset.Sunset3"
+		],
+		"description": "SkyboxPreset Sunset3"
+	},
+	"SkyboxPreset.Sunset4": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Sunset4"],
+		"body": [
+			"SkyboxPreset.Sunset4"
+		],
+		"description": "SkyboxPreset Sunset4"
+	},
+	"SkyboxPreset.Sunset5": {
+		"scope": "lua",
+		"prefix": ["SkyboxPreset.Sunset5"],
+		"body": [
+			"SkyboxPreset.Sunset5"
+		],
+		"description": "SkyboxPreset Sunset5"
+	},
+}
